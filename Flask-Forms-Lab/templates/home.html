@@ -11,7 +11,25 @@
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
-<ul id="myUL">
+
+
+
+
+
+<ul>
+    {% for i in facebook_friends %}
+ <li><a href="/friend/{{i}}">{{i}} </a></li>
+ {% endfor %}
+</ul>
+
+
+
+
+
+
+
+
+<!-- <ul id="myUL">
   <li><a href="#">Adele</a></li>
   <li><a href="#">Agnes</a></li>
   <li><a href="#">Billy</a></li>
@@ -20,7 +38,7 @@
   <li><a href="#">Christina</a></li>
   <li><a href="#">Cindy</a></li>
   <li><a href="#">Loai</a></li>
-</ul>
+</ul> -->
 
 <script>
 function myFunction() {
